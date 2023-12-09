@@ -1,0 +1,22 @@
+.secondContainer {
+  overflow: hidden;
+  padding: 1rem;
+  height: 85vh;
+}
+
+.headContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.yourLabCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lab {
+  display: flex;
+  align-items: center;
+}

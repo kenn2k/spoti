@@ -1,0 +1,58 @@
+.container {
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border: 1px solid #00795f;
+  box-shadow: 0 2px 5px #00795f, 0 4px 6px #00795f;
+  color: white;
+  font-weight: bold;
+  padding: 3rem;
+}
+
+.wrapper h2 {
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form input {
+}
+
+.wrapper input {
+  padding: 15px;
+
+  border: none;
+  border-bottom: 1px solid #00795f;
+  width: auto;
+  outline: none;
+}
+
+.error {
+  color: red;
+}
+
+.button {
+  background-color: #00795f;
+  border: 1px solid #00775d;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+  overflow: hidden;
+}

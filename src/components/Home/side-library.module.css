@@ -1,0 +1,36 @@
+.sideLab {
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  gap: 0.5rem;
+}
+.container {
+  overflow: hidden;
+  height: auto;
+  padding: 1rem;
+}
+.icon {
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .sideLab {
+    display: none;
+  }
+}
