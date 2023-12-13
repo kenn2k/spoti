@@ -64,6 +64,9 @@ const LogIn = React.memo(() => {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <form className={styles.form} onSubmit={signInHandler}>
+          <div className={styles.logo}>
+            <img src="/spotify.svg" alt="" />
+          </div>
           <div>
             <h2>Sign In</h2>
           </div>
