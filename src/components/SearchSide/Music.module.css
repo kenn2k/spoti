@@ -16,7 +16,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  animation: meals-appear 1s ease-out forwards;
+  animation: meals-appear 0.3s ease-out forwards;
 }
 
 @keyframes meals-appear {

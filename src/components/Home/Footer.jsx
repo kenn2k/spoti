@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
 import { useDispatch } from "react-redux";
 import { userAuthActions } from "../../store/user-slice";
-const Footer = () => {
+import React from "react";
+const Footer = React.memo(() => {
   const dispatchFunc = useDispatch();
   const logOutHandler = () => {
     dispatchFunc(userAuthActions.removeUser());
@@ -42,6 +43,7 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+});
+Footer.displayName = "Footer";
 
 export default Footer;

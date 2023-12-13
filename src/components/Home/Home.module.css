@@ -1,6 +1,13 @@
 .home {
+  padding: 0.5rem;
 }
 .container {
   display: flex;
   gap: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .home {
+    padding: 0;
+  }
 }

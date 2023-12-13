@@ -25,12 +25,9 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
 
   gap: 1rem;
-}
-
-.form p {
 }
 
 .wrapper input {
@@ -52,10 +49,27 @@
   padding: 0.5rem 1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.4s ease;
 
   overflow: hidden;
 }
 
 .button:disabled {
+  background-color: #7d9792;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    padding: 0;
+  }
+  .wrapper input {
+    padding: 10px;
+  }
+
+  .form {
+    width: 80%;
+  }
+
+  .form p {
+    margin-bottom: 1rem;
+  }
 }

@@ -1,11 +1,10 @@
 import Grid from "@mui/material/Grid";
 import MusicItem from "./MusicItem";
 import styles from "./Music.module.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import SearchMusicInput from "./SearchMusicInput";
-import Footer from "../Home/Footer";
 
-function Music() {
+const Music = React.memo(() => {
   const STORE_ITEMS = [
     {
       id: "1",
@@ -116,6 +115,7 @@ function Music() {
       </ul>
     </section>
   );
-}
+});
+Music.displayName = "Music";
 
 export default Music;

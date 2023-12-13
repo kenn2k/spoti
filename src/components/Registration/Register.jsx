@@ -1,16 +1,18 @@
 import styles from "./Register.module.css";
 import UseInput from "../../UI/Input";
-import { FormControlLabel } from "@mui/material";
+
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { FormControl, FormLabel, RadioGroup, Radio } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { userAuthActions } from "../../store/user-slice";
 import { useHistory } from "react-router-dom";
+import GenderField from "./RegisterByStep/GenderField";
+import React, { useState } from "react";
 
-function Register() {
+const Register = React.memo(() => {
   const dispatchFunc = useDispatch();
   const { push } = useHistory();
+  const [selectedGender, setSelectedGender] = useState("");
   const {
     value: name,
     hasError: invalidName,
@@ -71,10 +73,13 @@ function Register() {
     emailFinallyState("");
     passwordFinallyState("");
   };
+  const handleGenderChange = (gender) => {
+    setSelectedGender(gender);
+  };
 
   let isFormValid = false;
 
-  if (validName && validPassword && validEmail) {
+  if (validName && validPassword && validEmail && selectedGender !== "") {
     isFormValid = true;
   }
 
@@ -121,38 +126,9 @@ function Register() {
           )}
 
           <label>Date of Birth</label>
-          <input type="date" placeholder="birth" />
+          <input type="date" placeholder="birth" onBlur={passwordBlurHandler} />
 
-          <FormControl>
-            <FormLabel
-              id="demo-row-radio-buttons-group-label"
-              style={{ color: "white" }}
-            >
-              Gender
-            </FormLabel>
-            <RadioGroup
-              style={{ color: "white" }}
-              row
-              aria-labelledby="demo-row-radio-buttons-group-label"
-              name="row-radio-buttons-group"
-            >
-              <FormControlLabel
-                value="female"
-                control={<Radio color="success" />}
-                label="Female"
-              />
-              <FormControlLabel
-                value="male"
-                control={<Radio color="success" />}
-                label="Male"
-              />
-              <FormControlLabel
-                value="Non-binary"
-                control={<Radio color="success" />}
-                label="Non-binary"
-              />
-            </RadioGroup>
-          </FormControl>
+          <GenderField onGenderChange={handleGenderChange} />
           <button className={styles.button} disabled={!isFormValid}>
             Sign Up
           </button>
@@ -163,6 +139,6 @@ function Register() {
       </div>
     </div>
   );
-}
-
+});
+Register.displayName = "Register";
 export default Register;

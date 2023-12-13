@@ -12,5 +12,6 @@ const SearchPage = () => {
     </div>
   );
 };
+SearchPage.displayName = "SearchPage";
 
 export default SearchPage;
