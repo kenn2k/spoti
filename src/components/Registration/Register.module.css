@@ -14,12 +14,23 @@
   box-shadow: 0 2px 5px #00795f, 0 4px 6px #00795f;
   color: white;
   font-weight: bold;
-  padding: 3rem;
+  padding: 1rem 3rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.logo img {
+  width: 150px;
+  height: auto;
+  text-align: center;
 }
 
 .wrapper h2 {
   margin: 0;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
 }
 .form {
@@ -36,6 +47,9 @@
   border-bottom: 1px solid #9c6db0;
   width: auto;
   outline: none;
+}
+.wrapper span {
+  color: #00775d;
 }
 
 .error {
@@ -71,5 +85,21 @@
 
   .form p {
     margin-bottom: 1rem;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .logo img {
+    width: 100px;
+    height: auto;
+    text-align: center;
+  }
+
+  .wrapper h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 }

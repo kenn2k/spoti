@@ -1,7 +1,7 @@
 .secondContainer {
   overflow: hidden;
   padding: 1rem;
-  height: 85vh;
+  height: calc(100vh - 100px);
 }
 
 .headContent {

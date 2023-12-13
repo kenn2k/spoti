@@ -87,6 +87,10 @@ const Register = React.memo(() => {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <form className={styles.form} onSubmit={signUpHandler}>
+          <div className={styles.logo}>
+            <img src="/spotify.svg" alt="" />
+          </div>
+
           <div>
             <h2>Sign up with your email address</h2>
           </div>
@@ -133,7 +137,10 @@ const Register = React.memo(() => {
             Sign Up
           </button>
           <p>
-            Already have an account <Link to="/login">Sign In</Link>
+            Already have an account
+            <Link to="/login">
+              <span> Sign In</span>
+            </Link>
           </p>
         </form>
       </div>

@@ -4,8 +4,6 @@ import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 import MyTracks from "./Tracks/MyTracks";
 
-import useAuth from "../../hooks/use-auth";
-
 import { Link, useHistory } from "react-router-dom";
 import Footer from "./Footer";
 

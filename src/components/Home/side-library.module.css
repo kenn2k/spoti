@@ -3,7 +3,7 @@
   color: white;
   display: flex;
   flex-direction: column;
-  height: 10%;
+  height: 100vh;
   gap: 0.5rem;
 }
 .container {
