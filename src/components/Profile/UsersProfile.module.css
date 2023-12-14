@@ -103,4 +103,12 @@
   .container {
     border-radius: 0;
   }
+
+  .avatar {
+    display: none;
+  }
+  .avatarPic img {
+    width: 10rem;
+    height: auto;
+  }
 }
