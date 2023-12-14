@@ -8,6 +8,7 @@ function MobileLib() {
       <div className={styles.wrapper}>
         <p>Your Library</p>
         <MyTracks />
+        <h1>Another playlist</h1>
         <Footer />
       </div>
     </div>
