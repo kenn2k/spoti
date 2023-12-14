@@ -1,0 +1,22 @@
+.content {
+  height: 100vh;
+  background-color: #121212;
+
+  color: white;
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+}
+
+.wrapper p {
+  margin-top: 2rem;
+  font-weight: bold;
+}

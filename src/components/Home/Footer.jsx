@@ -27,9 +27,9 @@ const Footer = React.memo(() => {
             </Link>
           </span>
           <span>
-            <a href="">
+            <Link to="/library">
               <LibraryMusicOutlinedIcon style={{ fontSize: "2rem" }} />
-            </a>
+            </Link>
           </span>
           <span>
             <a href="">
